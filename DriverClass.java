@@ -22,29 +22,25 @@ public class DriverClass {
 		int option = sc.nextInt();
 
 		if (option == 1) {
-			generatedEmail = cs.generateEmailAddress(employee.getFirstname().toLowerCase(),
-					employee.getLastName().toLowerCase(), "tech");
+			generatedEmail = cs.generateEmailAddress(employee.getFirstname().toLowerCase(), employee.getLastName().toLowerCase(), "tech");
 			generatedPassword = cs.generatePassword();
 			cs.showCredential(employee, generatedEmail, generatedPassword);
 		}
 		
 		else if (option == 2) {
-			generatedEmail = cs.generateEmailAddress(employee.getFirstname().toLowerCase(),
-					employee.getLastName().toLowerCase(), "admin");
+			generatedEmail = cs.generateEmailAddress(employee.getFirstname().toLowerCase(), employee.getLastName().toLowerCase(), "admin");
 			generatedPassword = cs.generatePassword();
 			cs.showCredential(employee, generatedEmail, generatedPassword);
 		}
 		
 		else if (option == 3) {
-			generatedEmail = cs.generateEmailAddress(employee.getFirstname().toLowerCase(),
-					employee.getLastName().toLowerCase(), "Hr");
+			generatedEmail = cs.generateEmailAddress(employee.getFirstname().toLowerCase(), employee.getLastName().toLowerCase(), "Hr");
 			generatedPassword = cs.generatePassword();
 			cs.showCredential(employee, generatedEmail, generatedPassword);
 		}
 
 		else if (option == 4) {
-			generatedEmail = cs.generateEmailAddress(employee.getFirstname().toLowerCase(),
-					employee.getLastName().toLowerCase(), "legal");
+			generatedEmail = cs.generateEmailAddress(employee.getFirstname().toLowerCase(), employee.getLastName().toLowerCase(), "legal");
 			generatedPassword = cs.generatePassword();
 			cs.showCredential(employee, generatedEmail, generatedPassword);
 		}
